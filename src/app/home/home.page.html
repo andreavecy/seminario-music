@@ -1,20 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <swiper-container 
+  [initialSlide]="1"
+  [slidesPerView]="1"
+  [speed]="400"
+  >
+    <swiper-slide>
+      <h1 class="my-favorite-text-color">Titulo Principal</h1>
+      <img src="https://www.zooplus.es/magazine/wp-content/uploads/2021/06/Lombrices-en-gatitos.jpg"/>
+      <ion-icon class="slide-icon" name="beer-outline"></ion-icon>
+      <p>Hola soy la explicacion del slide, Hola soy la explicacion del slide</p>
+    </swiper-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <swiper-slide>
+      <h1>Titulo Segundario</h1>
+      <img src="assets/images/perritos.jpeg" />
+      <ion-icon name="barbell-outline"></ion-icon>
+      <p class="my-favorite-text-color">Hola soy la explicacion del slide, Hola soy la explicacion del slide</p>
+    </swiper-slide>
+
+    <swiper-slide>
+      <h1>Titulo Principal</h1>
+      <img src="https://www.zooplus.es/magazine/wp-content/uploads/2021/06/Lombrices-en-gatitos.jpg"/>
+      <ion-icon name="beer-outline"></ion-icon>
+      <p>Hola soy la explicacion del slide, Hola soy la explicacion del slide</p>
+    </swiper-slide>
+
+    <swiper-slide>
+      <h1>Titulo Segundario</h1>
+      <img src="assets/images/perritos.jpeg" />
+      <ion-icon name="barbell-outline"></ion-icon>
+      <p>Hola soy la explicacion del slide, Hola soy la explicacion del slide</p>
+    </swiper-slide>
+
+  </swiper-container>
 </ion-content>
