@@ -1,0 +1,28 @@
+.slide-icon {
+    font-size: 25px;
+    color: #A452FA;
+  }
+  .my-favorite-text-color {
+    color: var(--my-favorite-color);
+  }
+  h1 {
+    color: var(--ion-color-primary);
+  }
+  
+  p {
+    font-size: var(--my-favorite-font-size);
+  }
+  
+  ion-content {
+    --background: red;
+  }
+
+  .close-icon {
+    font-size: 40px;
+    color: #000000;
+    margin-right: 20px;
+    margin-top: 20px;
+    z-index: 100;
+    right: 0;
+    position: absolute;
+  }
