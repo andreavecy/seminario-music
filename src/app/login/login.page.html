@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="loginForm">
+
+    <ion-item>
+      <ion-input label="Email" labelPlacement="floating" placeholder="name@example.com" formControlName="email"></ion-input>
+    </ion-item>
+
+    <div class="validation-erros">
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div *ngIf="(
+          loginForm.get('email')?.hasError(validation.type) && 
+          loginForm.get('email')?.dirty) 
+        ">
+          {{validation.message}}
+        </div>
+        
+      </ng-container>
+    </div>
+
+    <ion-item>
+      <ion-input label="Password" labelPlacement="floating" placeholder="*******" formControlName="password"></ion-input>
+    </ion-item>
+
+  </form>
+</ion-content>
