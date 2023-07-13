@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <form [formGroup]="loginForm">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
 
     <ion-item>
       <ion-input label="Email" labelPlacement="floating" placeholder="name@example.com" formControlName="email"></ion-input>
@@ -26,6 +26,14 @@
     <ion-item>
       <ion-input label="Password" labelPlacement="floating" placeholder="*******" formControlName="password"></ion-input>
     </ion-item>
-
+    <ion-button 
+      expand="full"
+      shape="round"
+      color="secondary"
+      [disabled]="!loginForm.valid"
+      type="submit"
+      >
+      Ingresar
+    </ion-button>
   </form>
 </ion-content>
