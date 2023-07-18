@@ -6,5 +6,17 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  Hola soy el Home
+  <h1>Artistas</h1>
+  <swiper-container 
+  [initialSlide]="0"
+  [slidesPerView]="3"
+  *ngIf="artists?.length > 0"
+  >
+    <swiper-slide *ngFor="let artist of artists">
+      <ion-avatar>
+        <img src="{{artist.image}}" />
+        <span>{{artist.name}}</span>
+      </ion-avatar>
+    </swiper-slide>
+  </swiper-container>
 </ion-content>
