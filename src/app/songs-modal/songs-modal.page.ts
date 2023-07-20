@@ -8,7 +8,7 @@ import { NavParams, ModalController } from '@ionic/angular';
 })
 export class SongsModalPage implements OnInit {
   songs: any;
-  artist_name: any;
+  data_name: any;
   constructor(
     private navParams: NavParams,
     private modalController: ModalController
@@ -16,7 +16,7 @@ export class SongsModalPage implements OnInit {
 
   ngOnInit() {
     this.songs = this.navParams.data['songs'];
-    this.artist_name = this.navParams.data['artist'];
+    this.data_name = this.navParams.data['data_name'];
   }
 
   close(){
