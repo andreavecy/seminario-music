@@ -11,8 +11,8 @@
     <img [src]="userImage" *ngIf="!photo" />
     <img [src]="photo" *ngIf="photo" />
   </ion-avatar>
-  <h1 class="ion-text-center">Andrea Vecino</h1>
-  <h2 class="ion-text-center">andrea@pca.edu.co</h2>
+  <h1 class="ion-text-center">{{userInfo?.name}} {{userInfo?.last_name}}</h1>
+  <h2 class="ion-text-center">{{userInfo?.email}}</h2>
   <ion-grid>
     <ion-row class="align-items-center ion-text-center row-header">
       <ion-col>100</ion-col>
